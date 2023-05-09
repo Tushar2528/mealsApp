@@ -11,4 +11,7 @@ script.js file - contains all the fucntionalities that are present in the applic
 updating in the local storage.
 
 
+You can check out the application here - https://tushar2528.github.io/mealsApp/
+
+
 
