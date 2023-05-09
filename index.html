@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Meals App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9afaa8246.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="main-body">
+          <!-- header navbar -->
+          <div id="nav" class="navbar navbar-dark  fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Meals App</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" onclick="showFavMeals()" >
+                <span class="navbar-toggler-icon" ></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header ">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:white ;">
+                    Favourites
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!--this div is for show favourite meals -->
+                <div id="favourites-body" class="offcanvas-body    gap-2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="details-tab-container">
+          </div>
+    </div>
+
+    <!-- Search meals and display food-cards section -->
+    <div id="search-meals" style="background-image: 'images';" >
+      <div class="search-background">
+            <div>
+                <h1>Search For Meals</h1>
+            </div>
+            
+                <input style="display: 'inline'" type="text" name="search-bar" id="search-bar" placeholder="Search for meals here....." onkeyup="searchMeals()">
+              <button value="submit" id="cancel" onclick="cancelSearch()">Clear Search</button>
+      </div>
+           
+      <div class="cards-container">
+            <div class="cards">
+  
+        </div>
+      </div>
+    </div>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
